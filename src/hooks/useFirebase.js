@@ -7,6 +7,7 @@ import {
   onAuthStateChanged,
   signOut,
 } from "firebase/auth";
+import { useHistory } from "react-router-dom";
 
 initializeAuthentication();
 

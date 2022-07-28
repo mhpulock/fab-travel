@@ -1,24 +1,40 @@
-.footer-font {
-  font-family: "Poppins", sans-serif;
-  color: rgb(47, 47, 48);
+.background_color {
+  background-color: rgb(43, 42, 42);
+  color: white;
 }
-.footer-font h3 {
-  text-shadow: 5px 5px 5px rgb(114, 112, 112);
+.copy_write {
+  color: white;
 }
-
-.img2-logo {
-  height: 60px;
-  width: auto;
+.copy_write span {
+  color: #ff8800;
 }
-.footer-logo {
+.logo_resize {
   display: flex;
+  justify-content: center;
   align-items: center;
+}
+.logo_resize h3 {
+  color: #ff8800;
+}
+.logo_resize img {
+  height: 60px;
+}
+.footer_des {
+  color: rgb(182, 175, 175);
+}
+.social {
+  display: flex;
   justify-content: center;
 }
-.footer-logo h3 {
-  color: #ff9400;
+.social-logo {
+  height: 30px;
+  width: 30px;
+  margin: 5px;
 }
-
+.item small {
+  margin: 10px 0;
+  color: rgb(182, 175, 175);
+}
 .cursor2 {
   cursor: pointer;
   position: relative;
@@ -29,7 +45,7 @@
   position: absolute;
   width: 100%;
   height: 3px;
-  background-color: #ff9500;
+  background-color: #e4604a;
   left: 0;
   bottom: 0;
   transform: scale(0, 1);
@@ -37,20 +53,4 @@
 }
 .cursor2:hover::before {
   transform: scale(1, 1);
-}
-.box-shadow {
-  box-shadow: 5px 5px 30px gray;
-  padding: 20px;
-  margin: 10px;
-  border-radius: 10px;
-}
-.social {
-  display: flex;
-  justify-content: center;
-}
-.social-logo {
-  height: 40px;
-  width: 40px;
-  margin-top: 15px;
-  padding: 5px;
 }

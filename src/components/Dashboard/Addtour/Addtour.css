@@ -1,0 +1,25 @@
+h1 {
+  text-shadow: 3px 3px 40px rgb(54, 52, 52);
+  font-weight: bold;
+}
+.addtourForm {
+  margin: 0 auto;
+  width: 80%;
+}
+.addtourForm input,
+textarea {
+  margin: 5px 0;
+  width: 100%;
+}
+.submitButton {
+  border: none;
+  border-radius: 20px;
+  padding: 7px 30px;
+  background-color: rgb(34, 31, 31);
+  color: white;
+  font-weight: bold;
+}
+.submitButton:hover {
+  background-color: yellow;
+  color: black;
+}

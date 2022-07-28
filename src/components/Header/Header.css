@@ -5,7 +5,7 @@ body {
 .header-body {
 }
 .img-logo {
-  height: 60px;
+  height: 50px;
   width: auto;
 }
 
@@ -59,23 +59,24 @@ body {
   top: 50px;
   right: -20px;
   border-radius: 10px;
+  background-color: #fcfafa;
 }
 .card-width {
   width: 100%;
 }
 .smallprofileposition {
   position: absolute;
-  top: -10px;
-  left: 44%;
+  top: 0px;
+  left: 46%;
 }
 .largeprofileposition {
   position: absolute;
   top: -5px;
-  right: -22px;
+  right: -10px;
 }
 .profile {
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   border-radius: 25px;
 }
 .profileExpand {

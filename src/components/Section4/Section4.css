@@ -1,0 +1,34 @@
+.Section4_body {
+  padding: 150px 0 100px 0;
+}
+.custom_row_section4 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+.colum_style {
+  box-shadow: 5px 5px 40px gray;
+  border-radius: 5px;
+}
+.colum_style img {
+  height: 70px;
+  width: 70px;
+  margin: 10px 10px 20px 10px;
+}
+.colum_style h5 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+}
+.colum_style p {
+  color: rgb(77, 74, 74);
+  text-align: justify;
+  padding: 0 10px;
+}
+
+/* Media query */
+@media (max-width: 992px) {
+  .custom_row_section4 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

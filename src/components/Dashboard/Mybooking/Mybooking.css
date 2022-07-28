@@ -1,0 +1,19 @@
+.manage_body {
+  background-color: #f1f1f1;
+}
+.custom_row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+/* Media query */
+@media (max-width: 992px) {
+  .services_body {
+    padding: 30px 30px 100px 30px;
+  }
+  .custom_row {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

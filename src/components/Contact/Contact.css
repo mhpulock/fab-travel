@@ -1,0 +1,50 @@
+.contact_body {
+  padding: 50px 0;
+  min-height: 300px;
+}
+.font_Style {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.fonticon_color {
+  color: #da3c23;
+  height: 20px;
+}
+.socials {
+  display: flex;
+  justify-content: start;
+  padding-left: 30px;
+}
+.socials-logo {
+  height: 30px;
+  width: 30px;
+  margin: 5px;
+}
+.contact_form {
+  background-color: #ff782a;
+  padding: 20px;
+  border-radius: 5px;
+}
+.inputfield {
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+}
+.submitbutton {
+  color: rgb(255, 136, 0);
+  background-color: rgb(41, 39, 39);
+  border-radius: 20px;
+  padding: 7px 20px;
+  border: none;
+}
+.submitbutton:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(37, 37, 37);
+}
+
+/* Media query */
+@media (max-width: 992px) {
+  .message {
+    margin-top: 50px;
+  }
+}

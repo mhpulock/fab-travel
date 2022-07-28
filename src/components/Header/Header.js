@@ -1,6 +1,7 @@
 import React from "react";
 import "./Header.css";
 import logo from "../../image/travel-logo.png";
+import avater from "../../image/avater.png";
 import { Link } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 
@@ -8,9 +9,9 @@ const Header = () => {
   const { user, logout } = useAuth();
   const photo = user.photoURL;
   return (
-    <div className="header-body">
+    <div className="header-body sticky-top">
       <nav
-        className="navbar navbar-expand-lg navbar-light"
+        className="navbar navbar-expand-lg navbar-light py-0 "
         style={{ backgroundColor: "#FFFFFF" }}
       >
         <div className="container">
@@ -46,7 +47,7 @@ const Header = () => {
                   >
                     <img
                       className="nav-item profile smallprofileposition"
-                      src={user.photoURL}
+                      src={user.photoURL ? user.photoURL : avater}
                       alt="profile"
                     />
                   </Link>
@@ -60,7 +61,7 @@ const Header = () => {
                           <div className="d-flex justify-content-center">
                             <img
                               className="nav-item profileExpand"
-                              src={user.photoURL}
+                              src={user.photoURL ? user.photoURL : avater}
                               alt="profile"
                             />
                           </div>
@@ -106,6 +107,19 @@ const Header = () => {
                 </Link>
               </li>
 
+              {user?.email && (
+                <li className="nav-item ">
+                  <Link className="nav-link link-button cursor" to="/dashboard">
+                    DASHBOARD
+                  </Link>
+                </li>
+              )}
+              <li className="nav-item ">
+                <Link className="nav-link link-button cursor" to="/contact">
+                  CONTACT
+                </Link>
+              </li>
+
               {!user?.email && (
                 <li className="nav-item">
                   <Link className="nav-link link-button cursor" to="/login">
@@ -127,7 +141,7 @@ const Header = () => {
                   >
                     <img
                       className="nav-item profile largeprofileposition"
-                      src={user.photoURL}
+                      src={user.photoURL ? user.photoURL : avater}
                       alt="profile"
                     />
                   </Link>
@@ -139,7 +153,7 @@ const Header = () => {
                       <div className="d-flex justify-content-center">
                         <img
                           className="nav-item profileExpand"
-                          src={user.photoURL}
+                          src={user.photoURL ? user.photoURL : avater}
                           alt="profile"
                         />
                       </div>
